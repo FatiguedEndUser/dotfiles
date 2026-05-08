@@ -69,10 +69,11 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle 'fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
 #Aliases
-alias ls='ls -a --color'
+alias ls='ls -a --color -h --group-directories-first'
+alias ln='ls -ln --color -h --group-directories-first'
 
 #Shell Intergrations
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 #for more themes: https://github.com/JanDeDobbeleer/oh-my-posh/tree/main/themes
-eval "$(oh-my-posh init zsh --config $HOME/dotfiles/catppuccin_mocha.omp.json)"
+eval "$(oh-my-posh init zsh --config $HOME/dotfiles/themes/catppuccin_mocha.omp.json)"
