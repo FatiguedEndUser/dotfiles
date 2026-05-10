@@ -71,6 +71,10 @@ zstyle 'fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 #Aliases
 alias ls='ls -a --color -h --group-directories-first'
 alias ln='ls -ln --color -h --group-directories-first'
+alias reboot='sudo systemctl reboot'
+alias poweroff='sudo systemctl poweroff now'
+alias din='sudo dnf in'
+alias dup='sudo dnf up'
 
 #Shell Intergrations
 eval "$(fzf --zsh)"
