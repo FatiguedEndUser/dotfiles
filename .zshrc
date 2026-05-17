@@ -67,6 +67,10 @@ zstyle ':compeltion:*' menu no
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle 'fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
+#Adding Zoxide to path && Oh-My-Posh
+export PATH="$PATH:/home/esotericbanana/.local/bin"
+
+
 #Aliases
 alias ls='ls -a --color -h --group-directories-first'
 alias ln='ls -ln --color -h --group-directories-first'
