@@ -33,7 +33,6 @@ zinit snippet OMZP::sudo
 zinit snippet OMZP::dnf
 zinit snippet OMZP::command-not-found
 
-
 #Load completions
 autoload -U compinit && compinit
 zinit cdreplay -q
@@ -75,6 +74,7 @@ alias reboot='sudo systemctl reboot'
 alias poweroff='sudo systemctl poweroff now'
 alias din='sudo dnf in'
 alias dup='sudo dnf up'
+alias weather='curl wttr.in/eagan'
 
 #Shell Intergrations
 eval "$(fzf --zsh)"
