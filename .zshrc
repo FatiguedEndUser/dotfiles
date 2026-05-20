@@ -78,7 +78,8 @@ alias reboot='sudo systemctl reboot'
 alias poweroff='sudo systemctl poweroff now'
 alias din='sudo dnf in'
 alias dup='sudo dnf up'
-alias weather='curl wttr.in/eagan'
+alias weather='curl wttr.in/'
+alias moon='curl wttr.in/moon'
 
 #Shell Intergrations
 eval "$(fzf --zsh)"
